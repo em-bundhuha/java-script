@@ -31,6 +31,9 @@ for (no_barang; no_barang <= stok; no_barang++) {
     );
   } else if (no_barang === 15 || no_barang === 3) {
     console.log("barang no " + no_barang + " barang ini di return");
+  }  else if (no_barang <= stokLaku) {
+    console.log("no barang " + no_barang + " sudah laku")
+
   } else {
     console.log("barang no " + no_barang + " blom laku");
   }
