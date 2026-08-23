@@ -12,4 +12,20 @@ for (i = 1; i <= jumlah; i++) {
   }
   hasil += "\n"
 }
+// console.log(hasil)
+
+// var hasil = "";
+
+for ( i = 1; i <= jumlah; i++) {
+  for (s = (i*2 - 1); s > i; s--) {
+    hasil += " ";
+  }
+  
+  for (icon = (2*jumlah - i); icon >= i; icon-- ) {
+    hasil += ('+')
+  }
+  hasil += "\n";
+}
+
 console.log(hasil)
+
