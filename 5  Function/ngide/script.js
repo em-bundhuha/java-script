@@ -15,6 +15,16 @@ var ngaray = [10, 11, 14, 3, 54];
 // }
 
 console.log(
-  "kotak ini memiliki total lebar " + menghitungKubus(ngaray[1],
-  ngaray[0])
+  "kotak ini memiliki total lebar " + menghitungKubus(ngaray[1], ngaray[0]),
 );
+
+var a = 1;
+function tes() {
+//  in var timpa
+  var a = 2;
+}
+
+tes();
+console.log(a);
+
+output = 2
