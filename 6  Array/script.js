@@ -36,9 +36,34 @@ var arr = ['Nova', 'gusian', 'faramis'];
 
 //  5. slice
 //  slice(awal, akhir)
-//  yang Pertama terbawa akhir tidak contoh mau dari 1-2 maka slice(1,3)
-var arr =['Nova', 'ama', 'Dolby', 'Julian', 'Faramis']
-var arr2 = arr.slice(1, 3);
-console.log('ini bukan termasuk Hero')
-console.log(arr2.join(' - '));
+//  yang Pertama terbawa dan yang akhir tidak, contoh mau dari 1-2 maka slice(1,3)
+// var arr =['Nova', 'ama', 'Dolby', 'Julian', 'Faramis']
+// var arr2 = arr.slice(1, 3);
+// console.log('ini bukan termasuk Hero')
+// console.log(arr2.join(' - '));
 
+//  6. forEach
+// var angka = [1,2,3,4,5,6,7,8,9];
+// for( i = 0; i < angka.length; i++) {
+//     console.log(angka[i]);
+// }
+// angka.forEach(function(e) {
+//     console.log(e);
+// });
+
+
+var nama = ['Alan', 'ziham', 'danur','marsha','oline','kimmy']
+nama.forEach(function(e, i) {
+    console.log('Mahasiswa ke-' + (i+1) + ' adalah : ' + e)
+})
+//  Nyoba membuat daftar isi
+console.log('')
+var cetak = function(e, i) {
+    if (i === 0) {
+        console.log('No\tNama');
+    }
+    else {
+        console.log(i + '\t' + e);
+    }
+}
+nama.forEach(cetak);
