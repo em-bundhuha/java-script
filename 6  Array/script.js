@@ -52,18 +52,43 @@ var arr = ['Nova', 'gusian', 'faramis'];
 // });
 
 
-var nama = ['Alan', 'ziham', 'danur','marsha','oline','kimmy']
-nama.forEach(function(e, i) {
-    console.log('Mahasiswa ke-' + (i+1) + ' adalah : ' + e)
-})
-//  Nyoba membuat daftar isi
-console.log('')
-var cetak = function(e, i) {
-    if (i === 0) {
-        console.log('No\tNama');
-    }
-    else {
-        console.log(i + '\t' + e);
-    }
-}
-nama.forEach(cetak);
+// var nama = ['Alan', 'ziham', 'danur','marsha','oline','kimmy']
+// nama.forEach(function(e, i) {
+//     console.log('Mahasiswa ke-' + (i+1) + ' adalah : ' + e)
+// })
+// //  Nyoba membuat daftar isi
+// console.log('\n\t\tDaftar Isi')
+// var cetak = function(e, i) {
+//     if (i === 0) {
+//         console.log('No\tNama');
+//     }
+//     else {
+//         console.log(i + '\t' + e);
+//     }
+// }
+// nama.forEach(cetak);
+
+// //  7. map
+
+// const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const numerx2 = number.fore(function(e) {
+//     return e * 2;
+// })
+
+// console.log(numerx2.join(' - '));
+
+//  8, sort
+
+    // const number = [1, 7, 2,  8, 15, 4, 22, 6, 10, 3, 5, 9];
+    // console.log(number.join(' - '));
+    // number.sort(function(a,b) {
+    //     return a-b;
+    // });
+    // console.log(number.join(' - '));
+
+//  9. filter & find
+let angka = [1, 3, 4, 6, 10, 20, 22, 11, 2, 8];
+let cariAngka = angka.find(function(e) {
+    return e >= 4;
+});
+console.log(cariAngka);
